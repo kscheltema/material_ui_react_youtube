@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Button
-          startIcon={<Save />}
+          endIcon={<Save />}
           onClick={() => alert("hello")}
           size="large"
           href="#"
