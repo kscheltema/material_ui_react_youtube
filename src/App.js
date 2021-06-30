@@ -1,4 +1,5 @@
 import { Button } from "@material-ui/core";
+import { Save } from "@material-ui/icons";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Button
+          startIcon={<Save />}
           onClick={() => alert("hello")}
           size="large"
           href="#"
