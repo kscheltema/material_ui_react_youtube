@@ -11,6 +11,7 @@ function App() {
           size="small"
           variant="contained"
           color="primary"
+          disabled
         >
           Hello World
         </Button>
