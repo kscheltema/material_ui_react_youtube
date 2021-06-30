@@ -7,35 +7,18 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ButtonGroup>
-          <Button
-            endIcon={<Save />}
-            onClick={() => alert("hello")}
-            size="large"
-            href="#"
-            style={{
-              fontFamily: "Roboto",
-              fontSize: 15,
-              backgroundColor: "#019cde",
-            }}
-            variant="contained"
-            color="primary"
-          >
+        <ButtonGroup
+          style={{
+            fontFamily: "Roboto",
+            fontSize: 15,
+            backgroundColor: "#019cde",
+          }}
+          variant="contained"
+        >
+          <Button endIcon={<Save />} onClick={() => alert("hello")} href="#">
             Save
           </Button>
-          <Button
-            endIcon={<Delete />}
-            onClick={() => alert("hello")}
-            size="large"
-            href="#"
-            style={{
-              fontFamily: "Roboto",
-              fontSize: 15,
-              backgroundColor: "#019cde",
-            }}
-            variant="contained"
-            color="primary"
-          >
+          <Button endIcon={<Delete />} onClick={() => alert("bye")} href="#">
             Discard
           </Button>
         </ButtonGroup>
