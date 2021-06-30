@@ -8,11 +8,11 @@ function App() {
       <header className="App-header">
         <Button
           onClick={() => alert("hello")}
-          size="small"
+          size="large"
           href="#"
           style={{
-            // fontFamily: Roboto,
-            fontSize: 15,
+            fontFamily: "Roboto",
+            fontSize: 50,
             backgroundColor: "#019cde",
           }}
           variant="contained"
