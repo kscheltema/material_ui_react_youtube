@@ -9,9 +9,11 @@ function App() {
         <Button
           onClick={() => alert("hello")}
           size="small"
+          style={{
+            fontSize: 15,
+          }}
           variant="contained"
           color="primary"
-          disabled
         >
           Hello World
         </Button>
