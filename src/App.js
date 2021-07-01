@@ -32,6 +32,7 @@ const theme = createMuiTheme({
   typography: {
     h2: {
       fontsize: 28,
+      marginBottom: 0,
     },
   },
   palette: {
