@@ -3,6 +3,7 @@ import {
   Button,
   ButtonGroup,
   Checkbox,
+  Container,
   FormControlLabel,
   TextField,
   Typography,
@@ -70,49 +71,51 @@ function CheckboxExample() {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-        <header className="App-header">
-          <Typography variant="h2">Welcome to MUI</Typography>
-          <Typography variant="subtitle1">
-            for more examples see the materialUI docs
-          </Typography>
-          <ButtonStyle />
-          <TextField
-            variant="outlined"
-            style={{ backgroundColor: "#019cde" }}
-            type="email"
-            color="primary"
-            placeholder="test@test.com"
-          />
-          <CheckboxExample />
-          <ButtonGroup
-            style={{
-              fontFamily: "Roboto",
-              fontSize: 15,
-              backgroundColor: "#019cde",
-            }}
-            variant="contained"
-          >
-            <Button
+      <Container maxWidth="sm">
+        <div className="App">
+          <header className="App-header">
+            <Typography variant="h2">Welcome to MUI</Typography>
+            <Typography variant="subtitle1">
+              for more examples see the materialUI docs
+            </Typography>
+            <ButtonStyle />
+            <TextField
+              variant="outlined"
+              style={{ backgroundColor: "#019cde" }}
+              type="email"
               color="primary"
-              endIcon={<Save />}
-              onClick={() => alert("hello")}
-              href="#"
+              placeholder="test@test.com"
+            />
+            <CheckboxExample />
+            <ButtonGroup
+              style={{
+                fontFamily: "Roboto",
+                fontSize: 15,
+                backgroundColor: "#019cde",
+              }}
+              variant="contained"
             >
-              Save
-            </Button>
-            <Button
-              color="primary"
-              endIcon={<Delete />}
-              onClick={() => alert("bye")}
-              href="#"
-            >
-              Discard
-            </Button>
-          </ButtonGroup>
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
-      </div>
+              <Button
+                color="primary"
+                endIcon={<Save />}
+                onClick={() => alert("hello")}
+                href="#"
+              >
+                Save
+              </Button>
+              <Button
+                color="primary"
+                endIcon={<Delete />}
+                onClick={() => alert("bye")}
+                href="#"
+              >
+                Discard
+              </Button>
+            </ButtonGroup>
+            <img src={logo} className="App-logo" alt="logo" />
+          </header>
+        </div>
+      </Container>
     </ThemeProvider>
   );
 }
