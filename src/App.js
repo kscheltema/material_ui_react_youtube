@@ -4,6 +4,7 @@ import {
   ButtonGroup,
   Checkbox,
   FormControlLabel,
+  TextField,
 } from "@material-ui/core";
 import { Delete, Save } from "@material-ui/icons";
 import logo from "./logo.svg";
@@ -30,6 +31,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <TextField />
         <CheckboxExample />
         <ButtonGroup
           style={{
