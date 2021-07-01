@@ -81,7 +81,7 @@ function App() {
               for more examples see the materialUI docs
             </Typography>
             <ButtonStyle />
-            <Grid container spacing={4}>
+            <Grid container spacing={4} justify="center">
               <Grid item>
                 <Paper style={{ height: 75, width: 50 }} />
               </Grid>
