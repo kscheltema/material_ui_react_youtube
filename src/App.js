@@ -12,7 +12,7 @@ import {
   ThemeProvider,
 } from "@material-ui/core/styles";
 import { Delete, Save } from "@material-ui/icons";
-import { blue } from "@material-ui/core/colors";
+import { blue, green } from "@material-ui/core/colors";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -30,6 +30,9 @@ const theme = createMuiTheme({
   palette: {
     primary: {
       main: blue[500],
+    },
+    secondary: {
+      main: green[500],
     },
   },
 });
