@@ -5,6 +5,7 @@ import {
   Checkbox,
   FormControlLabel,
   TextField,
+  Typography,
 } from "@material-ui/core";
 import {
   createMuiTheme,
@@ -65,6 +66,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="App">
         <header className="App-header">
+          <Typography variant="h2">Welcome to MUI</Typography>
           <ButtonStyle />
           <TextField
             variant="outlined"
