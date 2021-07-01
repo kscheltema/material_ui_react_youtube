@@ -13,10 +13,11 @@ import "./App.css";
 
 const useStyles = makeStyles({
   root: {
-    borderRadius: 10,
+    borderRadius: 9,
     color: "#fff",
-    backgroundColor: "#019cde",
-    padding: "0 30px",
+    background: "linear-gradient(45deg, #c7c7c7, #019cde)",
+    padding: "0 1rem",
+    marginBottom: "1rem",
   },
 });
 
