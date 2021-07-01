@@ -82,7 +82,7 @@ function App() {
             </Typography>
             <ButtonStyle />
             <Grid container spacing={4} justify="center">
-              <Grid item xs={12}>
+              <Grid item xs={12} sm={6} lr={3} xl={2}>
                 <Paper style={{ height: 75, width: "100%" }} />
               </Grid>
               <Grid item>
