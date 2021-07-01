@@ -13,6 +13,7 @@ import {
 } from "@material-ui/core/styles";
 import { Delete, Save } from "@material-ui/icons";
 import { blue, green } from "@material-ui/core/colors";
+import "fontsource-roboto";
 import logo from "./logo.svg";
 import "./App.css";
 
