@@ -5,6 +5,8 @@ import {
   Checkbox,
   Container,
   FormControlLabel,
+  Grid,
+  Paper,
   TextField,
   Typography,
 } from "@material-ui/core";
@@ -79,13 +81,17 @@ function App() {
               for more examples see the materialUI docs
             </Typography>
             <ButtonStyle />
-            <TextField
-              variant="outlined"
-              style={{ backgroundColor: "#019cde" }}
-              type="email"
-              color="primary"
-              placeholder="test@test.com"
-            />
+            <Grid container spacing={4}>
+              <Grid item>
+                <Paper style={{ height: 75, width: 50 }} />
+              </Grid>
+              <Grid item>
+                <Paper style={{ height: 75, width: 50 }} />
+              </Grid>
+              <Grid item>
+                <Paper style={{ height: 75, width: 50 }} />
+              </Grid>
+            </Grid>
             <CheckboxExample />
             <ButtonGroup
               style={{
