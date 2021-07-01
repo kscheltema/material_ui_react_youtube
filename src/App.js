@@ -1,12 +1,27 @@
-import { Button, ButtonGroup } from "@material-ui/core";
+import { useState } from "react";
+import { Button, ButtonGroup, Checkbox } from "@material-ui/core";
 import { Delete, Save } from "@material-ui/icons";
 import logo from "./logo.svg";
 import "./App.css";
+
+function CheckboxExample() {
+  const [checked, setChecked] = useState(true);
+  return (
+    <div>
+      <Checkbox
+        onChange={(event) => setChecked(event.target.checked)}
+        checked={checked}
+        disabled
+      />
+    </div>
+  );
+}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <CheckboxExample />
         <ButtonGroup
           style={{
             fontFamily: "Roboto",
