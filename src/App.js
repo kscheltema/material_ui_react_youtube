@@ -1,5 +1,10 @@
 import { useState } from "react";
-import { Button, ButtonGroup, Checkbox } from "@material-ui/core";
+import {
+  Button,
+  ButtonGroup,
+  Checkbox,
+  FormControlLabel,
+} from "@material-ui/core";
 import { Delete, Save } from "@material-ui/icons";
 import logo from "./logo.svg";
 import "./App.css";
@@ -7,13 +12,15 @@ import "./App.css";
 function CheckboxExample() {
   const [checked, setChecked] = useState(true);
   return (
-    <div>
-      <Checkbox
-        onChange={(event) => setChecked(event.target.checked)}
-        checked={checked}
-        disabled
-      />
-    </div>
+    <FormControlLabel
+      control={
+        <Checkbox
+          onChange={(event) => setChecked(event.target.checked)}
+          checked={checked}
+        />
+      }
+      label="Testing Checkbox"
+    />
   );
 }
 
