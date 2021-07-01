@@ -1,13 +1,15 @@
 import { useState } from "react";
 import {
+  AppBar,
   Button,
   ButtonGroup,
   Checkbox,
   Container,
   FormControlLabel,
   Grid,
+  IconButton,
   Paper,
-  TextField,
+  Toolbar,
   Typography,
 } from "@material-ui/core";
 import {
@@ -15,7 +17,7 @@ import {
   makeStyles,
   ThemeProvider,
 } from "@material-ui/core/styles";
-import { Delete, Save } from "@material-ui/icons";
+import { Delete, Menu, Save } from "@material-ui/icons";
 import { blue, green } from "@material-ui/core/colors";
 import "fontsource-roboto";
 import logo from "./logo.svg";
@@ -76,6 +78,15 @@ function App() {
       <Container maxWidth="sm">
         <div className="App">
           <header className="App-header">
+            <AppBar>
+              <Toolbar>
+                <IconButton>
+                  <Menu />
+                  <Typography variant="h6">MUI theming</Typography>
+                  <Button>Login</Button>
+                </IconButton>
+              </Toolbar>
+            </AppBar>
             <Typography variant="h2">Welcome to MUI</Typography>
             <Typography variant="subtitle1">
               for more examples see the materialUI docs
