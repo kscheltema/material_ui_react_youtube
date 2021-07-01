@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <TextField />
+        <TextField variant="filled" color="secondary" type="date" />
         <CheckboxExample />
         <ButtonGroup
           style={{
