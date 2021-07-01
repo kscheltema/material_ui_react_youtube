@@ -29,6 +29,11 @@ const useStyles = makeStyles({
 });
 
 const theme = createMuiTheme({
+  typography: {
+    h2: {
+      fontsize: 28,
+    },
+  },
   palette: {
     primary: {
       main: blue[500],
@@ -67,6 +72,9 @@ function App() {
       <div className="App">
         <header className="App-header">
           <Typography variant="h2">Welcome to MUI</Typography>
+          <Typography variant="subtitle1">
+            for more examples see the materialUI docs
+          </Typography>
           <ButtonStyle />
           <TextField
             variant="outlined"
