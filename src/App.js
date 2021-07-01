@@ -31,7 +31,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <TextField variant="filled" color="secondary" type="date" />
+        <TextField
+          variant="outlined"
+          style={{ backgroundColor: "#019cde" }}
+          type="email"
+          value="test@test.com"
+        />
         <CheckboxExample />
         <ButtonGroup
           style={{
