@@ -6,8 +6,13 @@ import {
   FormControlLabel,
   TextField,
 } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import {
+  createMuiTheme,
+  makeStyles,
+  ThemeProvider,
+} from "@material-ui/core/styles";
 import { Delete, Save } from "@material-ui/icons";
+import { blue } from "@material-ui/core/colors";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -16,8 +21,16 @@ const useStyles = makeStyles({
     borderRadius: 9,
     color: "#fff",
     background: "linear-gradient(45deg, #c7c7c7, #019cde)",
-    padding: "0 1rem",
+    padding: "0.5rem 1rem",
     marginBottom: "1rem",
+  },
+});
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: blue[500],
+    },
   },
 });
 
@@ -45,34 +58,47 @@ function CheckboxExample() {
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <ButtonStyle />
-        <TextField
-          variant="outlined"
-          style={{ backgroundColor: "#019cde" }}
-          type="email"
-          placeholder="test@test.com"
-        />
-        <CheckboxExample />
-        <ButtonGroup
-          style={{
-            fontFamily: "Roboto",
-            fontSize: 15,
-            backgroundColor: "#019cde",
-          }}
-          variant="contained"
-        >
-          <Button endIcon={<Save />} onClick={() => alert("hello")} href="#">
-            Save
-          </Button>
-          <Button endIcon={<Delete />} onClick={() => alert("bye")} href="#">
-            Discard
-          </Button>
-        </ButtonGroup>
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <header className="App-header">
+          <ButtonStyle />
+          <TextField
+            variant="outlined"
+            style={{ backgroundColor: "#019cde" }}
+            type="email"
+            color="primary"
+            placeholder="test@test.com"
+          />
+          <CheckboxExample />
+          <ButtonGroup
+            style={{
+              fontFamily: "Roboto",
+              fontSize: 15,
+              backgroundColor: "#019cde",
+            }}
+            variant="contained"
+          >
+            <Button
+              color="primary"
+              endIcon={<Save />}
+              onClick={() => alert("hello")}
+              href="#"
+            >
+              Save
+            </Button>
+            <Button
+              color="primary"
+              endIcon={<Delete />}
+              onClick={() => alert("bye")}
+              href="#"
+            >
+              Discard
+            </Button>
+          </ButtonGroup>
+          <img src={logo} className="App-logo" alt="logo" />
+        </header>
+      </div>
+    </ThemeProvider>
   );
 }
 
