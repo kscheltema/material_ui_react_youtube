@@ -16,6 +16,8 @@ function CheckboxExample() {
       control={
         <Checkbox
           onChange={(event) => setChecked(event.target.checked)}
+          icon={<Delete />}
+          checkedIcon={<Save />}
           checked={checked}
         />
       }
