@@ -35,7 +35,7 @@ function App() {
           variant="outlined"
           style={{ backgroundColor: "#019cde" }}
           type="email"
-          value="test@test.com"
+          placeholder="test@test.com"
         />
         <CheckboxExample />
         <ButtonGroup
